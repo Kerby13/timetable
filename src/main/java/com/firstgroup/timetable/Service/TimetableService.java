@@ -41,9 +41,9 @@ public class TimetableService {
     }
 
     Iterable<Lesson> getLessonsByCourseAndGroupAndTeacher(int course, String group, int teacherID) {
-        Optional<Teacher> teacher = teacherRepository.findById(teacherID);
-        if (teacher.isPresent())
-            return lessonRepository.getByCourseAndGroupAndTeacher(course, group, teacher.get());
+        Teacher teacher = teacherRepository.findOne(teacherID);
+        if (teacher != null)
+            return lessonRepository.getByCourseAndGroupAndTeacher(course, group, teacher);
         else
             return Collections.EMPTY_LIST;
     }

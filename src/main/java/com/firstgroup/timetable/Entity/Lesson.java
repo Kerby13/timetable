@@ -14,7 +14,7 @@ public class Lesson {
     @Column(name="type")
     private char type;
 
-    @Column(name = "group")
+    @Column(name = "_group")
     private String group;
 
     @Column(name = "course")
