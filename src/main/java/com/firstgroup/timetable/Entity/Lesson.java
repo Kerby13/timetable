@@ -12,13 +12,7 @@ public class Lesson {
     private int id;
 
     @Column(name="type")
-    private int type;
-
-    @Column(name="teacherId")
-    private int teacherId;
-
-    @Column(name = "subjectId")
-    private int subjectId;
+    private char type;
 
     @Column(name = "group")
     private String group;
@@ -27,22 +21,18 @@ public class Lesson {
     private int course;
 
     @Column(name = "room")
-    private int room;
+    private String room;
 
     @Column(name = "time")
     private Time time;
 
     @ManyToOne
+    @JoinColumn(name="teacherID")
     private Teacher teacher;
 
     @ManyToOne
+    @JoinColumn(name="subjectID")
     private Subject subject;
-
-
-
-
-
-
 
     public int getId() {
         return id;
@@ -56,24 +46,8 @@ public class Lesson {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(char type) {
         this.type = type;
-    }
-
-    public int getTeacherId() {
-        return teacherId;
-    }
-
-    public void setTeacherId(int teacherId) {
-        this.teacherId = teacherId;
-    }
-
-    public int getSubjectId() {
-        return subjectId;
-    }
-
-    public void setSubjectId(int subjectId) {
-        this.subjectId = subjectId;
     }
 
     public String getGroup() {
@@ -92,11 +66,11 @@ public class Lesson {
         this.course = course;
     }
 
-    public int getRoom() {
+    public String getRoom() {
         return room;
     }
 
-    public void setRoom(int room) {
+    public void setRoom(String room) {
         this.room = room;
     }
 
