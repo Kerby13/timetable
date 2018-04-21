@@ -6,7 +6,9 @@ import javax.persistence.*;
 public class Admin {
     @Id
     @GeneratedValue( strategy=GenerationType.IDENTITY )
-    @Column(name = "login")
+    private int id;
+
+    @Column(name = "login", unique = true)
     private String login;
 
     @Column(name = "password")
@@ -26,5 +28,13 @@ public class Admin {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
