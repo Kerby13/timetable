@@ -26,6 +26,12 @@ public class Lesson {
     @Column(name = "time")
     private Time time;
 
+    @Column(name = "day")
+    private int day;
+
+    @Column(name = "isEven")
+    private boolean isEven;
+
     @ManyToOne
     @JoinColumn(name="teacherID")
     private Teacher teacher;
@@ -96,5 +102,21 @@ public class Lesson {
 
     public void setSubject(Subject subject) {
         this.subject = subject;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
+    }
+
+    public boolean isEven() {
+        return isEven;
+    }
+
+    public void setEven(boolean even) {
+        isEven = even;
     }
 }

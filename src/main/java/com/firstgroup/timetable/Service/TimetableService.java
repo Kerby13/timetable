@@ -36,14 +36,14 @@ public class TimetableService {
         adminRepository.save(admin);
     }
 
-    Iterable<Lesson> getLessonsByCourseAndGroup(int course, String group) {
-        return lessonRepository.getByCourseAndGroup(course, group);
+    Iterable<Lesson> getLessonsByCourseAndGroupAndIsEven(int course, String group, boolean isEven) {
+        return lessonRepository.getByCourseAndGroupAndIsEven(course, group, isEven);
     }
 
-    Iterable<Lesson> getLessonsByCourseAndGroupAndTeacher(int course, String group, int teacherID) {
+    Iterable<Lesson> getLessonsByCourseAndGroupAndIsEvenAndTeacher(int course, String group, boolean isEven, int teacherID) {
         Teacher teacher = teacherRepository.findOne(teacherID);
         if (teacher != null)
-            return lessonRepository.getByCourseAndGroupAndTeacher(course, group, teacher);
+            return lessonRepository.getByCourseAndGroupAndIsEvenAndTeacher(course, group, isEven, teacher);
         else
             return Collections.EMPTY_LIST;
     }
