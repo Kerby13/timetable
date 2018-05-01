@@ -1,0 +1,225 @@
+<html xmlns:th="http://www.thymeleaf.org"><head>
+    <meta charset="UTF-8" />
+    <title>Расписание</title>
+
+</head>
+<body>
+<div id="wrapper">
+    <table style="border-collapse: collapse;" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+    <form>
+        <span style="font-size:16px;">Курс: </span>
+        <select required><option></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+       </select></form>
+    <form>
+        <span style="font-size:16px;"> Группа: </span>
+        <select required><option></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select></form>
+    <form>
+        <span style="font-size:16px;"> Преподаватель: </span>
+        <select required><option></option>
+        <option value="1">Иванов</option>
+        <option value="2">Петров</option>
+    </select></form>
+    <form><input th:action="@{/changepassword}" th:method="post" class="button button-block" type="submit" value="Обновить"/></form>
+    <form><input th:action="@{/changepassword}" th:method="post" class="button button-block" type="submit" value="Регистрация/Войти"/></form>
+
+    <tr>
+        <td></td>
+        <td border="1" align="center" valign="middle"><b>Понедельник</b></td>
+        <td border="1" align="center" valign="middle"><b>Вторник</b></td>
+        <td border="1" align="center" valign="middle"><b>Среда</b></td>
+        <td border="1" align="center" valign="middle"><b>Четверг</b></td>
+        <td border="1" align="center" valign="middle"><b>Пятница</b></td>
+        <td border="1" align="center" valign="middle"><b>Суббота</b></td>
+    </tr>
+    <tr>
+        <td rowspan="2" border="1" align="center" valign="middle">
+            <b>8:00 - 9:35</b>
+        </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            Ур в ЧП<br><span style="font-size:10px;">Кузнецов Анатолий Николаевич</span><br><span style="font-
+size:10px;">504G</span>            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ВОЕННАЯ ПОДГОТОВКА            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            КС<br><span style="font-size:10px;">Голованов</span><br><span style="font-size:10px;">214</span>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            Matlab<br><span style="font-size:10px;">Голованов</span><br><span style="font-size:10px;">10</span>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            Основы Web программирования<br><span style="font-size:10px;">Абрамов </span><br><span style="font-
+size:10px;">214</span>            </td>
+    </tr>
+    <tr>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+    </tr>
+    <tr>
+        <td rowspan="2" border="1" align="center" valign="middle">
+            <b>9:45 - 11:20</b>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ВОЕННАЯ ПОДГОТОВКА            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            Уравнения математической физики<br><span style="font-size:10px;">Засорин Юрий
+Валентинович</span><br><span style="font-size:10px;">436</span>            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            Matlab<br><span style="font-size:10px;">Дылевский Александр Вячеславович</span><br><span style="font-
+size:10px;">430</span>            </td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td rowspan="2" border="1" align="center" valign="middle">
+            <b>11:30 - 13:05</b>
+        </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ВОЕННАЯ ПОДГОТОВКА            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            АД<br><span style="font-size:10px;">Титова</span><br><span style="font-size:10px;">11</span>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            БД<br><span style="font-size:10px;">Астахова Ирина Федоровна</span><br><span style="font-
+size:10px;">437</span>            </td>
+    </tr>
+    <tr>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            Уравнения математической физики<br><span style="font-size:10px;">Шишкина Наталья
+Михайловна</span><br><span style="font-size:10px;">504П</span>            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+    </tr>
+    <tr>
+        <td rowspan="2" border="1" align="center" valign="middle">
+            <b>13:25 - 15:00</b>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ВОЕННАЯ ПОДГОТОВКА            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            Физическая культура            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ЧМ<br><span style="font-size:10px;">Гудович</span><br><span style="font-size:10px;">329</span>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            МО<br><span style="font-size:10px;">Коструб Ирина Дмитриевна</span><br><span style="font-
+size:10px;">124</span>            </td>
+    </tr>
+    <tr>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            Matematica<br><span style="font-size:10px;">Кузнецов Анатолий Николаевич</span><br><span style="font-
+size:10px;">214</span>            </td>
+    </tr>
+    <tr>
+        <td rowspan="2" border="1" align="center" valign="middle">
+            <b>15:10 - 16:45</b>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            Уравнения математической физики<br><span style="font-size:10px;">Засорин Юрий
+Валентинович</span><br><span style="font-size:10px;">408П</span>            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ВОЕННАЯ ПОДГОТОВКА            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ЧМ<br><span style="font-size:10px;">Гудович</span><br><span style="font-size:10px;">227</span>
+        </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            МО<br><span style="font-size:10px;">Задорожний Владимир Григорьевич</span><br><span style="font-
+size:10px;">319</span>            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            БД<br><span style="font-size:10px;">Астахова Ирина Федоровна</span><br><span style="font-
+size:10px;">11</span>            </td>
+    </tr>
+    <tr>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            ОФ<br><span style="font-size:10px;">Половинкин Игорь Петрович</span><br><span style="font-
+size:10px;">323</span>            </td>
+    </tr>
+    <tr>
+        <td rowspan="2" border="1" align="center" valign="middle">
+            <b>16:55 - 18:30</b>
+        </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            МО<br><span style="font-size:10px;">Костина Любовь Николаевна</span><br><span style="font-
+size:10px;">11</span>            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            Уравнения математической физики<br><span style="font-size:10px;">Ляхов Лев Николаевич</span><br><span
+                style="font-size:10px;">436</span>            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ЧМ<br><span style="font-size:10px;">Гудович</span><br><span style="font-size:10px;">10</span>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            ОФ<br><span style="font-size:10px;">Половинкин Игорь Петрович</span><br><span style="font-
+size:10px;">323</span>            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            ЧМ<br><span style="font-size:10px;">Гудович</span><br><span style="font-size:10px;">329</span>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+    </tr>
+    <tr>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            Физическая культура            </td>
+    </tr>
+    <tr>
+        <td rowspan="2" border="1" align="center" valign="middle">
+            <b>18:40 - 20:00</b>
+        </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+        <td rowspan="2" colspan="1" border="1" align="center" valign="middle">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+    </tr>
+    <tr>
+        <td rowspan="1" colspan="1" border="1" align="center" valign="middle">
+            ОФ<br><span style="font-size:10px;">Половинкин Игорь Петрович</span><br><span style="font-
+size:10px;">320</span>            </td>
+    </tr>
+    </tbody>
+</table>        </div>
+
+</body></html>
